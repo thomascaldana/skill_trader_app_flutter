@@ -1,23 +1,32 @@
-// lib/src/pages/login_page.dart
 import 'package:flutter/material.dart';
-import '../routes/app_routes.dart';  // Substitua pelo nome do seu projeto
+import '../routes/app_routes.dart';
 
 class LoginPage extends StatelessWidget {
-  final TextEditingController emailController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController emailController = TextEditingController(text: 'usuario@email.com');
+  final TextEditingController passwordController = TextEditingController(text: 'sennha');
 
   LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Login')),
+      appBar: AppBar(title: Text('Entrar')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Container(
+              child: Image.asset('assets/logo_skill_trade.png', 
+              width: 250),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'LOGIN',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20),
             TextField(
               controller: emailController,
               decoration: InputDecoration(labelText: 'Email'),
@@ -31,7 +40,13 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Lógica de autenticação
+                if (emailController.text.isNotEmpty && passwordController.text.isNotEmpty) {
+                  Navigator.pushReplacementNamed(context, AppRoutes.home);
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Preencha os campos corretamente')),
+                  );
+                }
               },
               child: Text('Login'),
             ),
@@ -41,7 +56,7 @@ class LoginPage extends StatelessWidget {
                 // Navegar para a tela de cadastro (ou outra página)
               },
               child: Text(
-                'Não tem conta? Cadastre agora',
+                'Não tem uma conta? Cadastre agora',
                 style: TextStyle(color: Colors.blue),
               ),
             ),
