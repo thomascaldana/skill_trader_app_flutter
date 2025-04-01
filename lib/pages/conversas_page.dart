@@ -5,7 +5,6 @@ class ConversasPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Exemplo de conversas ativas com profissões e talentos
     final conversas = [
       {'nome': 'Carla', 'servico': 'Profª de Inglês', 'mensagem': 'Olá! Eu posso te ajudar com aulas de inglês.', 'avatar': 'https://randomuser.me/api/portraits/women/2.jpg'},
       {'nome': 'João', 'servico': 'Aula de Violão', 'mensagem': 'Oi! Se você quiser aprender violão, estou disponível para aulas.', 'avatar': 'https://randomuser.me/api/portraits/men/1.jpg'},
@@ -29,8 +28,7 @@ class ConversasPage extends StatelessWidget {
             subtitle: Text('${conversas[index]['servico']} - ${conversas[index]['mensagem']}'),
             trailing: Icon(Icons.chat_bubble_outline),
             onTap: () {
-              // Aqui você pode adicionar a ação de abrir a conversa
-              // Exemplo: Navigator.push(...)
+
             },
           );
         },

@@ -4,7 +4,6 @@ class BuscarServicosPage extends StatefulWidget {
   const BuscarServicosPage({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _BuscarServicosPageState createState() => _BuscarServicosPageState();
 }
 
@@ -18,7 +17,6 @@ class _BuscarServicosPageState extends State<BuscarServicosPage> {
   ];
 
   void _buscarServicos() {
-    // Aqui você pode implementar a lógica de busca
     print('Buscando por: ${_controller.text}');
   }
 
