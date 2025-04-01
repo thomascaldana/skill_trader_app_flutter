@@ -7,20 +7,20 @@ class EditarPerfilPage extends StatefulWidget {
 }
 
 class _EditarPerfilPageState extends State<EditarPerfilPage> {
-  String nome = 'Nome do Usuário'; // Nome inicial do usuário
+  String nome = 'Nome do Usuário'; 
   final TextEditingController nomeController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
-    nomeController.text = nome; // Preenche o controller com o nome atual
+    nomeController.text = nome; 
   }
 
   void salvarNome() {
     setState(() {
-      nome = nomeController.text; // Atualiza a variável local com o novo nome
+      nome = nomeController.text;
     });
-    Navigator.pop(context); // Retorna à página anterior após salvar
+    Navigator.pop(context); 
   }
 
   @override

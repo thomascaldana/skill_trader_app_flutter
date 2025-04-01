@@ -14,7 +14,7 @@ class _MeusServicosPageState extends State<MeusServicosPage> {
 
   final TextEditingController novoServicoController = TextEditingController();
 
-  // Função para adicionar serviço
+
   void adicionarServico(String nome) {
     setState(() {
       servicos.add(nome);
@@ -37,7 +37,7 @@ class _MeusServicosPageState extends State<MeusServicosPage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Campo para adicionar novo serviço
+
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Row(

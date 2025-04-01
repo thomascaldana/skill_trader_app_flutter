@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import '../routes/app_routes.dart';
 
 class LoginPage extends StatelessWidget {
-  final TextEditingController emailController = TextEditingController(text: 'usuario@email.com');
-  final TextEditingController passwordController = TextEditingController(text: 'sennha');
+  final TextEditingController emailController = TextEditingController(text: 'thomas@email.com');
+  final TextEditingController passwordController = TextEditingController(text: 'senha');
 
   LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Entrar')),
+      appBar: AppBar(title: Text('')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -53,7 +53,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 10),
             GestureDetector(
               onTap: () {
-                // Navegar para a tela de cadastro (ou outra página)
+
               },
               child: Text(
                 'Não tem uma conta? Cadastre agora',

@@ -1,14 +1,13 @@
-// lib/pages/perfil_page.dart
+
 import 'package:flutter/material.dart';
 import '../routes/app_routes.dart'; // Substitua pelo nome do seu projeto
 
 class PerfilPage extends StatelessWidget {
-  // Informações do usuário
+
   final String nome = 'Nome do Usuário';
   final String email = 'Email: usuario@email.com';
-  final String imagemPerfil = 'https://www.example.com/usuario.jpg';
 
-  const PerfilPage({super.key}); // Coloque aqui o link da imagem
+  const PerfilPage({super.key}); 
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class PerfilPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Center(
-          // Centraliza todo o conteúdo
+
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -28,7 +27,7 @@ class PerfilPage extends StatelessWidget {
               ),
               SizedBox(height: 20),
 
-              // Nome do usuário
+
               Text(
                 nome,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -42,9 +41,9 @@ class PerfilPage extends StatelessWidget {
               ),
               SizedBox(height: 40),
 
-              // Botões de ações com a largura total
+
               SizedBox(
-                width: double.infinity, // Ocupa toda a largura disponível Navigator.pushNamed(context, AppRoutes.editarPerfil)
+                width: double.infinity, 
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, AppRoutes.editarPerfil);
@@ -54,7 +53,7 @@ class PerfilPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               SizedBox(
-                width: double.infinity, // Ocupa toda a largura disponível
+                width: double.infinity, 
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, AppRoutes.meusServicos);

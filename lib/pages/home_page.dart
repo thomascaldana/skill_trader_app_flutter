@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../routes/app_routes.dart';  // Substitua pelo nome do seu projeto
+import '../routes/app_routes.dart'; 
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
