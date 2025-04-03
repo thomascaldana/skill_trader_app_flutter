@@ -12,7 +12,7 @@ class _BuscarServicosPageState extends State<BuscarServicosPage> {
   final List<String> _sugestoes = [
     'Bruno dias - Professor de inglês',
     'Maria - Designer',
-    'Carlos - Eletricista',
+    'Giovani - Fisiculturista',
     'Ana - Arquiteta',
   ];
 
