@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93176661199",
+    "project_id": "skill-trader-app-flutter",
+    "storage_bucket": "skill-trader-app-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93176661199:android:ecd535039cf5d7193be3ba",
+        "android_client_info": {
+          "package_name": "com.example.skill_trader_app_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG4PIbxf4ObPg1Gr6fETnbf5ZYgAZKQQI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

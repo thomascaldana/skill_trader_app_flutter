@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
               child: Image.asset('assets/logo_skill_trade.png', 
               width: 250),
             ),
-                  Container(
+                  SizedBox(
                     width: double.infinity,
                     child: Text(
                       'Bem-vindo ao SkillTrade',

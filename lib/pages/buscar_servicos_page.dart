@@ -8,9 +8,9 @@ class BuscarServicosPage extends StatefulWidget {
 }
 
 class _BuscarServicosPageState extends State<BuscarServicosPage> {
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   final List<String> _sugestoes = [
-    'João - Pintor',
+    'Bruno dias - Professor de inglês',
     'Maria - Designer',
     'Carlos - Eletricista',
     'Ana - Arquiteta',
